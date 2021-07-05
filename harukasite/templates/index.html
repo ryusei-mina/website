@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+<title>TOP</title>
+<link rel='stylesheet' href="{% static 'body.css' %}">
+{% endblock %}
+{% block main %}
+        <img class='topjpg' src="{% static 'IMG_2779.jpg' %}" alt='TOP' />
+        <marquee bgcolor="#ffff98" width="450" height="40" scrollamount="2" scrolldelay="20" direction="left" behavior="scroll">準備中</marquee>
+            <h1>SNS</h1>
+            <div>
+                <a href='https://twitter.com/halu_goat?s=21' target='_blank'><img src="{% static 'IMG_0662.PNG' %}" width="60" height="60" alt='Twitter'/></a>
+                <a href='https://instagram.com/haruka.musiclie?utm_medium=copy_link' target='_blank'><img src="{% static 'IMG_0660.PNG' %}" width="60" height="60" alt='instagram'/></a>
+                <a href='https://youtube.com/channel/UCUpSzti-bcsn_hFmQ34cvSw' target='_blank'><img src="{% static 'IMG_0661.PNG' %}" width="60" height="60"/></a>
+            </div>
+{% endblock %}

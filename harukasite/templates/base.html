@@ -1,0 +1,16 @@
+{% load static %}
+<doctype! html>
+    <html>
+        <head>
+        {% block title %}
+        {% endblock %}
+            <link rel='stylesheet' href="{% static 'main.css' %}">
+         </head>
+        <body>
+        {% include '_navbar.html' %}
+        {% block main %}
+         <marquee bgcolor="#ffff98" width="450" height="40" scrollamount="2" scrolldelay="20" direction="left" behavior="scroll">準備中</marquee>
+        {% endblock %}
+        {% include '_footer.html' %}
+        </body>
+    </html>
